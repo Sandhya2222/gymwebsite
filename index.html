@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanju Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/dumbells.webp') no-repeat center center fixed;
+        background-size: 1500px 700px;
+
+    }
+
+    .left {
+        display: inline-block;
+        /* border: solid rgb(7, 104, 44); */
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 95px;
+        /* filter: invert(100%); */
+
+    }
+
+    .left div {
+        line-height: 10px;
+        /* font-size: 26pxs; */
+        text-align: center;
+    }
+
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+        /* border: solid rgb(7, 104, 44); */
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        /* border: solid rgb(7, 104, 44); */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        font-size: 17px;
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: rgb(5, 23, 75);
+        text-decoration: none;
+        padding: 10px 10px
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        background-color: rgb(187, 180, 180);
+        text-decoration: underline;
+
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px 9px;
+        padding: 4px 14px;
+        border: 4px solid grey;
+        border-radius: 30px;
+        font-size: 15px;
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+        border: 2px solid wheat;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .container h1 {
+        background-color: wheat;
+        border: 1px solid grey;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .container button{
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .formgroup {
+        /* background-color: black; */
+        width: 42%;
+
+    }
+    
+
+    .formgroup input {
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: center;
+        display: block;
+        width: 208px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 8px auto;
+        font-size: 15px;
+        
+        border-radius: 8px;
+
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>SanjuFitness</div>
+
+
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">AboutUs</a></li>
+                <li><a href="#">FitnessCalculator</a></li>
+                <li><a href="#">ContactUs</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym now</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <button class="btn">Submit</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
